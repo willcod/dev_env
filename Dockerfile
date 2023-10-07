@@ -31,3 +31,5 @@ RUN apt autoclean && apt autoremove
 COPY ./.vimrc ${HOME}
 
 WORKDIR ${HOME}
+
+ENTRYPOINT [ "bash" ]
